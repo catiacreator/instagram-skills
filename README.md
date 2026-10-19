@@ -2,15 +2,17 @@
   <img src="assets/hero.png" alt="Instagram marketing skills for Claude Code and Codex, open source MIT licensed" width="900" />
 </p>
 
+> **Cópia de [sergebulaev/instagram-skills](https://github.com/sergebulaev/instagram-skills)**, mantida por [@catiacreator](https://theviralclubacademy.com/9skills/) para os alunos do The Viral Club Academy. Autor original: Serge Bulaev · licença MIT.
+
 # Instagram Marketing Skills for Claude Code and Codex
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/sergebulaev/instagram-skills?color=111827&label=release" alt="Latest release">
+  <img src="https://img.shields.io/github/v/release/catiacreator/instagram-skills?color=111827&label=release" alt="Latest release">
   <img src="https://img.shields.io/badge/Claude_Code-Compatible-D97757?logo=anthropic&logoColor=white" alt="Claude Code Compatible">
   <img src="https://img.shields.io/badge/Codex-Compatible-111827" alt="Codex Compatible">
   <img src="https://img.shields.io/badge/Claude-Skills-8A63D2" alt="Claude Skills">
   <img src="https://img.shields.io/badge/License-MIT-22C55E.svg" alt="MIT License">
-  <img src="https://img.shields.io/github/stars/sergebulaev/instagram-skills?style=social" alt="GitHub stars">
+  <img src="https://img.shields.io/github/stars/catiacreator/instagram-skills?style=social" alt="GitHub stars">
   <img src="https://img.shields.io/badge/PRs-welcome-F59E0B.svg" alt="PRs Welcome">
 </p>
 
@@ -34,14 +36,14 @@ Pick whichever way you use Claude Code or Codex:
 ### Codex CLI
 
 ```bash
-codex plugin marketplace add sergebulaev/instagram-skills
+codex plugin marketplace add catiacreator/instagram-skills
 codex plugin add instagram-skills@instagram-skills
 ```
 
 To test a local clone before publishing changes:
 
 ```bash
-git clone https://github.com/sergebulaev/instagram-skills.git
+git clone https://github.com/catiacreator/instagram-skills.git
 cd instagram-skills
 codex plugin marketplace add .
 codex plugin add instagram-skills@instagram-skills
@@ -52,7 +54,7 @@ codex plugin add instagram-skills@instagram-skills
 1. Open https://claude.ai/code
 2. Go to **Skills** in the sidebar
 3. Click **Add from GitHub**
-4. Paste: `sergebulaev/instagram-skills`
+4. Paste: `catiacreator/instagram-skills`
 5. Done. The skills activate automatically when you ask about Instagram.
 
 ### Claude Desktop (Mac / Windows)
@@ -61,20 +63,20 @@ codex plugin add instagram-skills@instagram-skills
 2. Open **Settings** (gear icon)
 3. Go to **Skills**
 4. Click **Add from GitHub**
-5. Paste: `sergebulaev/instagram-skills`
+5. Paste: `catiacreator/instagram-skills`
 6. Done. Start a new conversation and ask Claude to write a caption.
 
 ### Claude Code (CLI / VS Code / JetBrains)
 
 ```
-/plugin marketplace add sergebulaev/instagram-skills
+/plugin marketplace add catiacreator/instagram-skills
 /plugin install instagram-skills@instagram-skills
 ```
 
 Or clone the repo and open it as your working directory:
 
 ```bash
-git clone https://github.com/sergebulaev/instagram-skills.git
+git clone https://github.com/catiacreator/instagram-skills.git
 cd instagram-skills
 ```
 
@@ -83,7 +85,7 @@ cd instagram-skills
 1. Open your OpenClaw working directory
 2. Clone the skills into it:
    ```bash
-   git clone https://github.com/sergebulaev/instagram-skills.git
+   git clone https://github.com/catiacreator/instagram-skills.git
    ```
 3. In OpenClaw settings, add this to your system prompt:
    ```
@@ -98,7 +100,7 @@ cd instagram-skills
 Hermes Agent (Nous Research) follows the agentskills.io open standard and loads `skills/*/SKILL.md` directly. Clone the bundle into your Hermes skills folder:
 
 ```bash
-git clone https://github.com/sergebulaev/instagram-skills.git ~/.hermes/skills/instagram-skills
+git clone https://github.com/catiacreator/instagram-skills.git ~/.hermes/skills/instagram-skills
 ```
 
 Coming from OpenClaw? `hermes claw migrate` imports these skills automatically. Then call `/<skill-name>` from any of your Hermes chat surfaces.
@@ -108,10 +110,10 @@ Coming from OpenClaw? `hermes claw migrate` imports these skills automatically. 
 One command that works across Claude Code, Codex, Cursor, and any other agent that reads SKILL.md files:
 
 ```bash
-npx skills add sergebulaev/instagram-skills
+npx skills add catiacreator/instagram-skills
 ```
 
-> **Found this useful? [Star the repo](https://github.com/sergebulaev/instagram-skills).** Curated Claude Code and Codex directories rank and gate by star count, so a star is what makes these skills findable for the next person. It is the only thing we ask. No signup, no email.
+> **Found this useful? [Star the repo](https://github.com/catiacreator/instagram-skills).** Curated Claude Code and Codex directories rank and gate by star count, so a star is what makes these skills findable for the next person. It is the only thing we ask. No signup, no email.
 
 ## What you can do
 
@@ -271,7 +273,7 @@ instagram-skills/
 | Runtime | Auto-discovers skills? | Setup |
 |---|---|---|
 | **Claude Code** (CLI, Desktop, Web, IDE) | Yes | Install via plugin or clone. Skills activate on matching prompts. |
-| **Codex CLI** | Yes | `codex plugin marketplace add sergebulaev/instagram-skills` and `codex plugin add instagram-skills@instagram-skills`. |
+| **Codex CLI** | Yes | `codex plugin marketplace add catiacreator/instagram-skills` and `codex plugin add instagram-skills@instagram-skills`. |
 | **Anthropic Managed Agents** (`/v1/agents`) | Yes | Pass skill files in the agent context. |
 | **Cursor / Cline / Aider** | Manual | Read `SKILL.md` files as prompt context; import `lib/` as Python. |
 | **LangChain / AutoGen** | No | Use `lib/` as a package; feed `references/` as prompt context. |
